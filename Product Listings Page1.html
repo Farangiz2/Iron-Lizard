@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron Lizard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .categories {
+            margin-left: 20px; 
+        }
+        .auth-buttons {
+            display: flex;
+            align-items: center;
+        }
+        .auth-buttons a {
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+            color: white;
+            text-decoration: none;
+        }
+        .auth-buttons i {
+            margin-right: 5px; 
+        }
+        .logo {
+            padding: 10px; 
+        }
+        .logo h1 {
+            color: white; 
+        }
+        .car-categories {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 40%; 
+        }
+        .car-categories li {
+            display: inline;
+            margin-right:50px; 
+        }
+        .car-categories li a {
+            color: white;
+            text-decoration: none;
+        }
+        .car-categories li a:hover {
+            color: #f2f2f2;
+        }
+    </style>
+</head>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Iron Lizard</h1>
+            </div>
+            <nav class="car-categories">
+                <ul>
+                    <li><a href="#">Cars</a></li>
+                    <li><a href="#">Bikes</a></li>
+                    <li><a href="#">Trucks</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="#" class="sign-up"><i class="fas fa-user-plus"></i> Sign Up</a>
+                <a href="#" class="log-in"><i class="fas fa-sign-in-alt"></i> Log In</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="car-listing">
+            <img src="randomcar.jpg" alt="Car 1">
+            <h2>Car 1</h2>
+            <p>Price: $10,000</p>
+            <button onclick="location.href='product.html'">View Details</button>
+        </div>
+        <div class="car-listing">
+            <img src="randomcar2.jpg" alt="Car 2">
+            <h2>Car 2</h2>
+            <p>Price: $15,000</p>
+            <button onclick="location.href='product.html'">View Details</button>
+        </div>
+    </main>
+</html>
